@@ -54,4 +54,8 @@ INSERT INTO Alim VALUES (3,2,5,'2023-06-15',370000);
 INSERT INTO Alim VALUES (4,1,2,'2010-07-02',17500);
 INSERT INTO Alim VALUES (5,5,3,'2021-08-22',156800);
 
+select M.Madi, M.Msoyadi, A.Plaka, S.Sfiyat
+from Musteri M 
+inner join Satis S On M.Mno = S.Mno
+inner join Arac A on S.Aracno = A.Aracno;
 
